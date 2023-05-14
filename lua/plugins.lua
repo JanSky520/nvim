@@ -24,6 +24,10 @@ require("lazy").setup({
     { 'voldikss/vim-floaterm' },
     { 'tpope/vim-dadbod' },
     { 'kristijanhusak/vim-dadbod-ui'},
+    {'ZSaberLv0/ZFVimIM'},
+    {'ZSaberLv0/ZFVimJob'},
+    {'ZSaberLv0/ZFVimIM_pinyin'},
+
 
 })
 

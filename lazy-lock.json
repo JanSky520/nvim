@@ -1,5 +1,8 @@
 {
   "Trans.nvim": { "branch": "v2", "commit": "5504ab5757affec96dae116593d70313ac3b4289" },
+  "ZFVimIM": { "branch": "master", "commit": "d405f703dd1fc020a206c4ffe6a392c8e6910515" },
+  "ZFVimIM_pinyin": { "branch": "master", "commit": "4f69a1be5fe75b44f7f3e8fe06eee03ceceadf83" },
+  "ZFVimJob": { "branch": "master", "commit": "6a417e9fd46dbce206eebd2575e5c430718cd75d" },
   "bufferline.nvim": { "branch": "main", "commit": "1952c33e425ede785d26aa9e250addfe304a8510" },
   "coc.nvim": { "branch": "release", "commit": "bbaa1d5d1ff3cbd9d26bb37cfda1a990494c4043" },
   "lazy.nvim": { "branch": "main", "commit": "aba872ec78ffe7f7367764ab0fff6f0170421fde" },
