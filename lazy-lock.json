@@ -1,0 +1,14 @@
+{
+  "Trans.nvim": { "branch": "v2", "commit": "5504ab5757affec96dae116593d70313ac3b4289" },
+  "bufferline.nvim": { "branch": "main", "commit": "1952c33e425ede785d26aa9e250addfe304a8510" },
+  "coc.nvim": { "branch": "release", "commit": "bbaa1d5d1ff3cbd9d26bb37cfda1a990494c4043" },
+  "lazy.nvim": { "branch": "main", "commit": "aba872ec78ffe7f7367764ab0fff6f0170421fde" },
+  "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
+  "nvim-tree.lua": { "branch": "master", "commit": "89816ace70642e9d3db0dab3dc68918f8979ec31" },
+  "nvim-web-devicons": { "branch": "master", "commit": "986875b7364095d6535e28bd4aac3a9357e91bbe" },
+  "sqlite.lua": { "branch": "master", "commit": "b7e28c8463254c46a8e61c52d27d6a2040492fc3" },
+  "tokyonight.nvim": { "branch": "main", "commit": "df13e3268a44f142999fa166572fe95a650a0b37" },
+  "vim-dadbod": { "branch": "master", "commit": "3f57c0cd41523423fd781422dfc833820095a3e8" },
+  "vim-dadbod-ui": { "branch": "master", "commit": "5f6a11d80128e05fcc8e5d5025b8acf6d77faa99" },
+  "vim-floaterm": { "branch": "master", "commit": "bd0aee3c861d613f56b85bd9eaffdcab459071fd" }
+}
