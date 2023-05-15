@@ -27,7 +27,7 @@ require("lazy").setup({
     {'ZSaberLv0/ZFVimIM'},
     {'ZSaberLv0/ZFVimJob'},
     {'ZSaberLv0/ZFVimIM_pinyin'},
-
+    { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
 })
 
