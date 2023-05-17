@@ -21,7 +21,7 @@ vim.keymap.set('n', 'ti', '<Cmd>TranslateInput<CR>')
 vim.keymap.set({'n', 'x'}, 'tt', '<Cmd>Translate<CR>')
 vim.keymap.set({'n', 'x'}, 'tk', '<Cmd>TransPlay<CR>') -- 自动发音选中或者光标下的单词
 
-map("n", "<C-m>", ":NvimTreeToggle<CR>", opt)
+map("n", "<C-m>", ":NeoTreeShow<CR>", opt)
 
 map("n", "m", ":CocList marketplace<CR>", opt)
 map("n", "mm", ":CocCommand<CR>", opt)

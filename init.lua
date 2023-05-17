@@ -4,7 +4,7 @@ require "plugins"
 require "colorscheme"
 
 require "config.trans"
-require "config.nvimtree"
+require "config.tree"
 require "config.lualine"
 require "config.blankline"
 require "config.bufferline"
