@@ -17,11 +17,9 @@ require("lazy").setup({
     {'folke/tokyonight.nvim'},
     {'neoclide/coc.nvim', branch = 'release'},
     {"JuanZoran/Trans.nvim",build = function () require'Trans'.install() end,dependencies = { 'kkharji/sqlite.lua' }},
-    
     {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x",
         dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim",}
     },
-
     {'akinsho/bufferline.nvim', dependencies = 'nvim-tree/nvim-web-devicons'},
     { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
     { 'voldikss/vim-floaterm' },
@@ -33,6 +31,8 @@ require("lazy").setup({
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     {'HiPhish/nvim-ts-rainbow2'},
     { "lukas-reineke/indent-blankline.nvim" },
+    { 'nvim-telescope/telescope.nvim', tag = '0.1.1', dependencies = { 'nvim-lua/plenary.nvim' }},
+    { "Bryley/neoai.nvim", dependencies = { "MunifTanjim/nui.nvim",}},
 
 })
 

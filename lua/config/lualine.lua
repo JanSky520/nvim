@@ -1,5 +1,5 @@
 local function hello()
-  return [[你若安好，便是晴天]]
+  return [[非我族类，其心必异]]
 end
 sections = { lualine_a = { hello } }
 
