@@ -5,7 +5,6 @@ local opt = {noremap = true, silent = true }
 
 map("n", "q", ":q<CR>", opt)
 map("n", "w", ":w<CR>", opt)
-map("n", "s", "", opt)
 map("n", "sh", ":vsp<CR>", opt)
 map("n", "sc", "<C-w>c", opt)
 map("n", "<C-Left>", ":vertical resize -2<CR>", opt)
@@ -14,6 +13,7 @@ map("n", "<C-Right>", ":vertical resize +2<CR>", opt)
 map("n", "c", ":FloatermNew --height=0.5 --width=0.5 --autoclose=0 gcc % -o %< && ./%< <CR>", opt)
 map("n", "r", ":FloatermNew --height=0.7 --width=0.6 --autoclose=2 ranger --cmd=\"cd ~\"<CR>", opt)
 map("n", "db", ":FloatermNew --height=0.7 --width=0.6 --autoclose=2 vi +DBUI<CR>", opt)
+map("n", "s", ":FloatermNew --height=0.5 --width=0.5 --autoclose=0 chmod +x ./% && ./% <CR>", opt)
 map("n", "ls", ":Lazy sync<CR>", opt)
 map("n", "ai", ":NeoAI<CR>", opt)
 
