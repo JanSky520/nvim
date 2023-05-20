@@ -12,5 +12,8 @@ require "config.treesitter"
 require "config.telescope"
 require "config.neoai"
 
-require "config.coc".config()
+require "lsp.setup"
+require "lsp.cmp"
+require "lsp.ui"
+
 require 'config.dadbod'.config()

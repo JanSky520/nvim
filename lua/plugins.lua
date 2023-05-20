@@ -15,7 +15,6 @@ vim.g.mapleader = " "
 require("lazy").setup({
 	
     {'folke/tokyonight.nvim'},
-    {'neoclide/coc.nvim', branch = 'release'},
     {"JuanZoran/Trans.nvim",build = function () require'Trans'.install() end,dependencies = { 'kkharji/sqlite.lua' }},
     {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x",
         dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim",}
@@ -33,6 +32,19 @@ require("lazy").setup({
     { "lukas-reineke/indent-blankline.nvim" },
     { 'nvim-telescope/telescope.nvim', tag = '0.1.1', dependencies = { 'nvim-lua/plenary.nvim' }},
     { "Bryley/neoai.nvim", dependencies = { "MunifTanjim/nui.nvim",}},
+
+    { "neovim/nvim-lspconfig" },
+    { "williamboman/mason.nvim", build = ":MasonUpdate" },
+    { "williamboman/mason-lspconfig.nvim"},
+    {"hrsh7th/nvim-cmp"},
+    {"hrsh7th/vim-vsnip"},
+    {"hrsh7th/cmp-vsnip"},
+    {"hrsh7th/cmp-nvim-lsp"},
+    {"hrsh7th/cmp-buffer"},
+    {"hrsh7th/cmp-path"},
+    {"hrsh7th/cmp-cmdline"},
+    {"rafamadriz/friendly-snippets"},
+    {"onsails/lspkind-nvim"};
 
 })
 

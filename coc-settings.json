@@ -1,7 +1,0 @@
-{
-    "diagnostic.warningSign": "⚠",
-    "diagnostic.errorSign": ">>",
-    "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
-    "snippets.ultisnips.directories": ["~/.config/nvim/snippets/ultisnips"],
-    
-}
