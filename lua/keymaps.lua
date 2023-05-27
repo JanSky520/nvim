@@ -22,7 +22,6 @@ vim.keymap.set('n', 'ti', '<Cmd>TranslateInput<CR>')
 vim.keymap.set({'n', 'x'}, 'tt', '<Cmd>Translate<CR>')
 vim.keymap.set({'n', 'x'}, 'tk', '<Cmd>TransPlay<CR>') -- 自动发音选中或者光标下的单词
 
-map("n", "<C-m>", ":NeoTreeShow<CR>", opt)
 map("n", "<C-t>", ":FloatermToggle<CR>", opt)
 map("t", "<C-t>", "<C-\\><C-n>:FloatermToggle<CR>", opt)
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
@@ -43,9 +42,9 @@ pluginKeys.cmp = function(cmp)
             c = cmp.mapping.close()
         }),
         -- 上一个
-        ["<UP>"] = cmp.mapping.select_prev_item(),
+        ["<C-UP>"] = cmp.mapping.select_prev_item(),
         -- 下一个
-        ["<DOWN>"] = cmp.mapping.select_next_item(),
+        ["<TAB>"] = cmp.mapping.select_next_item(),
         -- 确认
         ["<CR>"] = cmp.mapping.confirm({
             select = true,

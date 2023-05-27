@@ -4,6 +4,7 @@ vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 vim.wo.number = true
 vim.wo.cursorline = true
+vim.wo.cursorcolumn = true
 vim.wo.signcolumn = "yes"
 vim.o.tabstop = 4
 vim.bo.tabstop = 4
@@ -45,7 +46,7 @@ vim.o.updatetime = 300
 vim.o.timeoutlen = 500
 vim.o.timeout = true
 -- split window 从下边和右边出现
-vim.o.splitbelow = true
+vim.o.splitbelow = false
 vim.o.splitright = true
 -- 自动补全不自动选中
 vim.g.completeopt = "menu,menuone,noselect,noinsert"
@@ -63,4 +64,4 @@ vim.o.pumheight = 10
 vim.o.showtabline = 2
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = true
-vim.o.list = true
+--vim.o.list = true
