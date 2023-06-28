@@ -3,7 +3,6 @@ require "keymaps"
 require "plugins"
 require "colorscheme"
 
-require "config.trans"
 require "config.lualine"
 require "config.bufferline"
 require "config.treesitter"
