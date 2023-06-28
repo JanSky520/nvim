@@ -11,8 +11,4 @@ require "config.telescope"
 require "config.neoai"
 require "config.dashboard"
 
-require "lsp.setup"
-require "lsp.cmp"
-require "lsp.ui"
-
 require 'config.dadbod'.config()
