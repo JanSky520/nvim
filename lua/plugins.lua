@@ -24,6 +24,7 @@ require("lazy").setup({
     { 'nvim-telescope/telescope.nvim', tag = '0.1.1', dependencies = { 'nvim-lua/plenary.nvim' }},
     { "Bryley/neoai.nvim", dependencies = { "MunifTanjim/nui.nvim",}},
     { 'glepnir/dashboard-nvim', event = 'VimEnter', dependencies = { {'nvim-tree/nvim-web-devicons'}}},
+    { 'neoclide/coc.nvim', branch = 'release' }，
 
 })
 
