@@ -11,3 +11,4 @@ require "config.neoai"
 require "config.dashboard"
 
 require 'config.dadbod'.config()
+require 'config.coc'.config()
