@@ -21,7 +21,6 @@ require("lazy").setup({
     { 'tpope/vim-dadbod' },
     { 'kristijanhusak/vim-dadbod-ui'},
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-    {'HiPhish/nvim-ts-rainbow2'},
     { 'nvim-telescope/telescope.nvim', tag = '0.1.1', dependencies = { 'nvim-lua/plenary.nvim' }},
     { "Bryley/neoai.nvim", dependencies = { "MunifTanjim/nui.nvim",}},
     { 'glepnir/dashboard-nvim', event = 'VimEnter', dependencies = { {'nvim-tree/nvim-web-devicons'}}},
