@@ -8,6 +8,7 @@ require "config.bufferline"
 require "config.treesitter"
 require "config.telescope"
 require "config.neoai"
+require "config.nvim-tree"
 require "config.dashboard"
 
 require 'config.dadbod'.config()

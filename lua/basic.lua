@@ -3,6 +3,7 @@ vim.o.fileencoding = 'utf-8'
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 vim.wo.number = true
+vim.wo.relativenumber = true
 vim.wo.cursorline = true
 vim.wo.cursorcolumn = true
 vim.wo.signcolumn = "yes"
