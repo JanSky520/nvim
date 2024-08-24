@@ -1,15 +1,9 @@
 require "basic"
-require "keymaps"
-require "plugins"
-require "colorscheme"
+require "keymap"
+require "plugin"
+require "theme"
 
-require "config.lualine"
-require "config.bufferline"
-require "config.treesitter"
-require "config.telescope"
-require "config.neoai"
-require "config.nvim-tree"
-require "config.dashboard"
+require "plugins.treesitter"
+require "plugins.markdown"
+require "plugins.coderun"
 
-require 'config.dadbod'.config()
-require 'config.coc'.config()
