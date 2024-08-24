@@ -18,7 +18,11 @@ require("lazy").setup({
     spec = {
         {"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}},
         {'MeanderingProgrammer/render-markdown.nvim', opts = {}, dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }},
-        { "CRAG666/code_runner.nvim", config = true },
+        {"CRAG666/code_runner.nvim", config = true},
+        {'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
+        {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
+
+
     },
 
     checker = { enabled = true },
