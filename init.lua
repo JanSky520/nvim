@@ -1,11 +1,12 @@
-require "basic"
-require "keymap"
-require "plugin"
-require "theme"
+require("basic")
+require("keymap")
+require("neovide")
+require("plugin")
 
-require "plugins.treesitter"
-require "plugins.markdown"
-require "plugins.coderun"
-require "plugins.lualine"
-require "plugins.bufferline"
-
+require("plugins.theme")
+require("plugins.lsp")
+require("plugins.mini")
+require("plugins.treesitter")
+require("plugins.markdown")
+require("plugins.terminal")
+require("plugins.myfun")

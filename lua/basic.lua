@@ -2,21 +2,18 @@ vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
-vim.wo.number = true
-vim.wo.cursorline = true
-vim.wo.signcolumn = "yes"
+vim.o.number = true
+vim.o.cursorline = true
+vim.o.signcolumn = "yes"
 vim.o.tabstop = 4
-vim.bo.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftround = true
 vim.o.shiftwidth = 4
-vim.bo.shiftwidth = 4
--- 空格替代tab
+vim.opt.clipboard = 'unnamedplus'
+--空格替代tab
 vim.o.expandtab = true
-vim.bo.expandtab = true
 -- 新行对齐当前行
 vim.o.autoindent = true
-vim.bo.autoindent = true
 vim.o.smartindent = true
 -- 搜索大小写不敏感，除非包含大写
 vim.o.ignorecase = true
@@ -27,8 +24,8 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 -- 当文件被外部程序修改时，自动加载
 vim.o.autoread = true
-vim.bo.autoread = true
-vim.wo.wrap = false
+vim.o.autochdir = true
+vim.o.wrap = false
 -- 光标在行首尾时<Left><Right>可以跳到下一行
 vim.o.whichwrap = '<,>,[,]'
 -- 允许隐藏被修改过的buffer
@@ -52,7 +49,6 @@ vim.g.completeopt = "menu,menuone,noselect,noinsert"
 -- 样式
 vim.o.background = "dark"
 vim.o.termguicolors = true
-vim.opt.termguicolors = true
 -- 补全增强
 vim.o.wildmenu = true
 -- Dont' pass messages to |ins-completin menu|

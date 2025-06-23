@@ -16,14 +16,15 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     spec = {
-        {"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}},
-        {'MeanderingProgrammer/render-markdown.nvim', opts = {}, dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }},
-        {"CRAG666/code_runner.nvim", config = true},
-        {'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
-        {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
-
-
+        {"catppuccin/nvim", name = "catppuccin", priority = 1000},
+        {"mason-org/mason-lspconfig.nvim"},
+        {"mason-org/mason.nvim"},
+        {"neovim/nvim-lspconfig"},
+        {"echasnovski/mini.nvim", version = '*'},
+        {"nvim-treesitter/nvim-treesitter"},
+        {"HiPhish/rainbow-delimiters.nvim"},
+        {"MeanderingProgrammer/render-markdown.nvim"},
+        {"akinsho/toggleterm.nvim"},
     },
-
-    checker = { enabled = true },
+    install = {colorscheme = { "catppuccin" }},
 })
