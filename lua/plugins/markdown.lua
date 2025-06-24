@@ -1,3 +1,9 @@
-require('render-markdown').setup({
-    latex = { enabled = true },
-})
+return {
+    {
+        "MeanderingProgrammer/render-markdown.nvim",
+        event = "VeryLazy",
+        opts = {
+            completions = { blink = { enabled = true } },
+        },
+    },
+}

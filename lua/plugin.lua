@@ -16,15 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     spec = {
-        {"catppuccin/nvim", name = "catppuccin", priority = 1000},
-        {"mason-org/mason-lspconfig.nvim"},
-        {"mason-org/mason.nvim"},
-        {"neovim/nvim-lspconfig"},
-        {"echasnovski/mini.nvim", version = '*'},
-        {"nvim-treesitter/nvim-treesitter"},
-        {"HiPhish/rainbow-delimiters.nvim"},
-        {"MeanderingProgrammer/render-markdown.nvim"},
-        {"akinsho/toggleterm.nvim"},
+        { import = "plugins" },
     },
-    install = {colorscheme = { "catppuccin" }},
+    install = { colorscheme = { "tokyonight" } },
 })
