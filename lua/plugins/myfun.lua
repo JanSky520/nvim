@@ -1,13 +1,7 @@
-require('rainbow-delimiters.setup').setup {
-    strategy = {},
-    query = {},
-    highlight = {},
-}
-
 vim.api.nvim_create_autocmd("InsertLeave", {
     pattern = "*",
     callback = function()
-        os.execute("fcitx5-remote -c")    
+        os.execute("fcitx5-remote -c")
     end,
 })
 

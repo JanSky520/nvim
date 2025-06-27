@@ -1,7 +1,7 @@
 vim.o.guifont = "Sarasa Term SC Nerd:h12"
 vim.g.neovide_position_animation_length = 0.1
 vim.g.neovide_scroll_animation_length = 0.2
-vim.g.neovide_theme = "catppuccin"
+vim.g.neovide_theme = "tokyonight"
 vim.g.neovide_refresh_rate = 120
 vim.g.neovide_refresh_rate_idle = 3
 vim.g.neovide_no_idle = true

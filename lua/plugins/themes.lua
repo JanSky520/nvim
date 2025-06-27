@@ -1,50 +1,21 @@
-return {
-    {
-        "folke/tokyonight.nvim",
-        event = "VeryLazy",
-        priority = 1000,
-        config = function()
-            vim.cmd([[colorscheme tokyonight]])
-        end,
-    },
+vim.cmd([[colorscheme tokyonight]])
 
-    {
-        "nvim-treesitter/nvim-treesitter",
-        event = "VeryLazy",
-        main = "nvim-treesitter.configs",
-        opts = {
-            ensure_installed = {"latex", "html", "hyprlang", "css", "make", "nasm"},
-            highlight = {
-                enable = true,
-                additional_vim_regex_highlighting = false,
-            },
-            sync_install = false,
-            auto_install = false,
-        }
-    },
+require('mini.icons').setup()
 
-    {
-        "HiPhish/rainbow-delimiters.nvim",
-        event = "VeryLazy",
+require'nvim-treesitter.configs'.setup({
+    ensure_installed = {"jsonc", "latex", "html", "hyprlang", "css", "make", "nasm", "fish", "toml"},
+    highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
     },
+    sync_install = false,
+    auto_install = false,
+})
 
-    {
-        "echasnovski/mini.statusline",
-        event = "VeryLazy",
-        opts = {
-            use_icons = true,
-        },
-    },
-
-    {
-        "echasnovski/mini.tabline",
-        event = "VeryLazy",
-        opts = {},
-    },
-
-    {
-        "echasnovski/mini.icons",
-        event = "VeryLazy",
-        opts = {},
-    },
-}
+require('mini.tabline').setup()
+require('mini.statusline').setup()
+require('rainbow-delimiters.setup').setup()
+require('mini.pairs').setup()
+require('mini.diff').setup()
+require('mini.git').setup()
+require('mini.comment').setup()

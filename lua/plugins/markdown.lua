@@ -1,9 +1,12 @@
-return {
-    {
-        "MeanderingProgrammer/render-markdown.nvim",
-        event = "VeryLazy",
-        opts = {
-            completions = { blink = { enabled = true } },
-        },
+require('render-markdown').setup({
+    completions = {
+        lsp = { enabled = true },
+        blink = { enabled = true },
     },
-}
+    heading = {
+        position = "inline",
+        sign = true,
+        border = false,
+        border_virtual = true,
+    },
+})
