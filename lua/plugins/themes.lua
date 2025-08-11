@@ -3,7 +3,7 @@ vim.cmd([[colorscheme tokyonight]])
 require('mini.icons').setup()
 
 require'nvim-treesitter.configs'.setup({
-    ensure_installed = {"jsonc", "latex", "html", "hyprlang", "css", "make", "nasm", "fish", "toml"},
+    ensure_installed = {"bash", "jsonc", "latex", "html", "hyprlang", "css", "make", "nasm", "regex", "toml"},
     highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,
