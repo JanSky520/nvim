@@ -31,6 +31,7 @@ require("lazy").setup({
         {"rafamadriz/friendly-snippets"},
         {"saghen/blink.cmp", version = "*"},
         {"folke/snacks.nvim"},
+        {"CRAG666/code_runner.nvim"},
         {"echasnovski/mini.statusline"},
         {"echasnovski/mini.tabline"},
         {"echasnovski/mini.diff"},

@@ -11,6 +11,9 @@ require("which-key").add({
     {"<leader>sr", "<cmd>vsp<cr>", desc = "右侧分割窗口", mode = "n"},
     {"<leader>sc", "<cmd>close<cr>", desc = "关闭当前窗口", mode = "n"},
 
+    {"<leader>r", group = "代码"},
+    {"<leader>rr", "<cmd>RunCode<cr>", desc = "运行代码", mode = "n"},
+
     {"<leader>q", "<cmd>q<cr>", desc = "退出", mode = "n"},
     {"<leader>w", "<cmd>w<cr>", desc = "保存", mode = "n"},
 })
