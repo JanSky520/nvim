@@ -1,66 +1,58 @@
 require("mason").setup()
-require("mason-lspconfig").setup()
 
-local registry = require "mason-registry"
-local function setup(name, config)
-    local success, package = pcall(registry.get_package, name)
-    if success and not package:is_installed() then
-        package:install()
-    end
-    config.capabilities = require("blink.cmp").get_lsp_capabilities()
-    local lsp = require("mason-lspconfig").get_mappings().package_to_lspconfig[name]
-    vim.lsp.config(lsp, config)
-end
+vim.lsp.enable "lua_ls"
+vim.lsp.enable "clangd"
 
-setup("lua-language-server", {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { "vim" },
-            },
+vim.api.nvim_create_autocmd("LspAttach", {
+    group = vim.api.nvim_create_augroup("lsp-attach", {clear = true}),
+    callback = function(event)
+        local client = vim.lsp.get_client_by_id(event.data.client_id)
+
+        local signs = {
+            Error = "",
+            Warn = "",
+            Info = "",
+            Hint = "",
         }
-    }
-})
-setup("clangd", {})
-setup("html-lsp", {})
 
-vim.diagnostic.config({
-    update_in_insert = true,
-    virtual_text = true,
-})
+        for type, icon in pairs(signs) do
+            local hl = "DiagnosticSign" .. type
+            vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+        end
 
-local signs = { Error = "", Warn = "", Hint = "", Info = "" }
-for type, icon in pairs(signs) do
-    local hl = "DiagnosticSign" .. type
-    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-end
+        vim.diagnostic.config {
+            virtual_text = true,
+            signs = true,
+            update_in_insert = true,
+        }
+
+        vim.lsp.inlay_hint.enable(true)
+    end,
+})
 
 require("blink.cmp").setup({
-    completion = {
-        documentation = { auto_show = true },
-    },
-    keymap = { preset = "super-tab" },
-    sources = {
-        default = { "path", "buffer", "snippets", "lsp" },
-    },
-    appearance = {
-        nerd_font_variant = 'mono'
-    },
     cmdline = {
-        sources = function()
-            local cmd_type = vim.fn.getcmdtype()
-            if cmd_type == "/" or cmd_type == "?" then
-                return { "buffer" }
-            end
-            if cmd_type == ":" then
-                return { "cmdline" }
-            end
-            return {}
-        end,
         keymap = { preset = "super-tab" },
         completion = {
-            menu = { auto_show = true },
-        },
+            menu = {auto_show = true}
+        }
     },
-    fuzzy = { implementation = "rust" }
+
+    completion = {
+        menu = { border = 'single' },
+        documentation = {
+            auto_show = true,
+            auto_show_delay_ms = 50,
+            window = { border = 'single' }
+        },
+        ghost_text = { enabled = true },
+    },
+    sources = {
+        default = { 'lsp', 'path', 'buffer' },
+    },
+    signature = {
+        enabled = true,
+        window = { border = 'single' }
+    },
+    keymap = { preset = "super-tab" },
 })

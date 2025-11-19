@@ -11,3 +11,4 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
         vim.bo.filetype = "nasm"
     end,
 })
+

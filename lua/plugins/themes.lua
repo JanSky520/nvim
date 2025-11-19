@@ -1,10 +1,19 @@
-vim.cmd([[colorscheme tokyonight]])
+vim.cmd.colorscheme "catppuccin"
 
-require('mini.icons').setup()
+require("catppuccin").setup({
+    flavour = "auto",
+    background = {
+        light = "latte",
+        dark = "mocha",
+    },
+})
 
 require'nvim-treesitter.configs'.setup({
-    ensure_installed = {"bash", "jsonc", "latex", "html",
-                        "css", "make", "nasm", "regex", "toml", "yaml"},
+    ensure_installed = {
+        "fish", "jsonc", "latex", "html", "cpp", "json",
+        "css", "make", "nasm", "regex", "toml", "hyprlang", 
+        "yaml"
+    },
     highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,
@@ -13,10 +22,4 @@ require'nvim-treesitter.configs'.setup({
     auto_install = false,
 })
 
-require('mini.tabline').setup()
-require('mini.statusline').setup()
 require('rainbow-delimiters.setup').setup()
-require('mini.pairs').setup()
-require('mini.diff').setup()
-require('mini.git').setup()
-require('mini.comment').setup()

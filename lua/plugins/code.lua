@@ -22,6 +22,6 @@ require('code_runner').setup({
         },
         python = "python",
         lua = "luajit",
-        sh = "bash",
+        sh = "fish",
     }
 })
