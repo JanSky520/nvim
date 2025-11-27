@@ -7,7 +7,7 @@ vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftround = true
 vim.o.shiftwidth = 4
-vim.opt.clipboard = 'unnamedplus'
+vim.o.clipboard = 'unnamedplus'
 --空格替代tab
 vim.o.expandtab = true
 -- 新行对齐当前行
@@ -58,3 +58,4 @@ vim.o.showtabline = 2
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = true
 --vim.o.list = true
+vim.g.loaded_perl_provider = 0
