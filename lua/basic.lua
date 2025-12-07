@@ -1,61 +1,27 @@
-vim.o.scrolloff = 8
-vim.o.sidescrolloff = 8
-vim.o.number = true
-vim.o.cursorline = true
-vim.o.signcolumn = "yes"
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftround = true
-vim.o.shiftwidth = 4
-vim.o.clipboard = 'unnamedplus'
---空格替代tab
-vim.o.expandtab = true
--- 新行对齐当前行
-vim.o.autoindent = true
-vim.o.smartindent = true
--- 搜索大小写不敏感，除非包含大写
-vim.o.ignorecase = true
-vim.o.smartcase = true
--- 搜索不要高亮
-vim.o.hlsearch = false
--- 边输入边搜索
-vim.o.incsearch = true
--- 当文件被外部程序修改时，自动加载
-vim.o.autoread = true
-vim.o.autochdir = true
-vim.o.wrap = false
--- 光标在行首尾时<Left><Right>可以跳到下一行
-vim.o.whichwrap = '<,>,[,]'
--- 允许隐藏被修改过的buffer
-vim.o.hidden = true
--- 鼠标支持
-vim.o.mouse = "a"
--- 禁止创建备份文件
-vim.o.backup = false
-vim.o.writebackup = false
-vim.o.swapfile = false
--- smaller updatetime
-vim.o.updatetime = 300
--- 设置 timeoutlen 为等待键盘快捷键连击时间500毫秒，可根据需要设置
-vim.o.timeoutlen = 500
-vim.o.timeout = true
--- split window 从下边和右边出现
-vim.o.splitbelow = false
-vim.o.splitright = true
--- 自动补全不自动选中
-vim.g.completeopt = "menu,menuone,noselect,noinsert"
--- 样式
-vim.o.background = "dark"
-vim.o.termguicolors = true
--- 补全增强
-vim.o.wildmenu = true
--- Dont' pass messages to |ins-completin menu|
-vim.o.shortmess = vim.o.shortmess .. 'c'
--- 补全最多显示10行
-vim.o.pumheight = 10
--- 永远显示 tabline
-vim.o.showtabline = 2
--- 使用增强状态栏插件后不再需要 vim 的模式提示
-vim.o.showmode = true
---vim.o.list = true
-vim.g.loaded_perl_provider = 0
+vim.o.autochdir = true						-- 启用自动切换目录
+vim.o.bufhidden = "hide"					-- 打开其他 buffer 时隐藏
+vim.o.clipboard = "unnamedplus"					-- 开启系统剪贴板
+vim.o.complete = ".,w,b,u,t,i,kspell"				-- 设置补全源
+vim.o.completeopt = "menuone,preview,popup,preinsert"		-- 设置补全样式
+vim.o.cursorline = true						-- 高亮当前行
+vim.o.expandtab = true						-- 启用制表符转空格
+vim.o.fileignorecase = true					-- 启用文件名忽略大小写
+vim.o.icon = true						-- 启用终端图标设置
+vim.o.infercase = true                                          -- 启用大小写推断
+vim.o.nrformats = "bin,hex,alpha,octal"                         -- 启用所有数字格式
+vim.o.number = true                                             -- 启用行号
+vim.o.pumheight = 10                                            -- 补全菜单的高度
+vim.o.shell = "/usr/bin/fish"                                   -- 默认 shell 设置
+vim.o.shiftround = true                                         -- 启用缩进对齐
+vim.o.shiftwidth = 4                                            -- 设置缩进 4 空格
+vim.o.showtabline = 2                                           -- 顶部显示标签页
+vim.o.signcolumn = "number"                                     -- 附加信息与行号合并
+vim.o.smartcase = true                                          -- 启用智能大小写搜索
+vim.o.splitright = true                                         -- 新窗口出现在右侧
+vim.o.softtabstop=4                                             -- 按一次 Tab 键插入 4 个空格
+vim.o.syntax = "enable"                                         -- 启用语法高亮
+vim.o.timeoutlen = 500                                          -- 设置映射超时
+vim.o.undofile = true                                           -- 启用持久化撤销
+vim.o.updatetime = 500                                          -- 设置更新时间
+vim.o.wildignorecase = true                                     -- 启用命令行补全忽略大小写
+vim.o.winborder = "rounded"
