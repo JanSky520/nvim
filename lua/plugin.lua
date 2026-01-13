@@ -19,6 +19,7 @@ vim.g.maplocalleader = "\\"
 
 require("lazy").setup({
     rocks = { enabled = false, },
-    spec = { import = "plugins" },
-    install = { colorscheme = { "catppuccin" } },
+    spec = { { import = "plugins" } },
+        install = { colorscheme = { "catppuccin" } },
+        checker = { enabled = true },
 })

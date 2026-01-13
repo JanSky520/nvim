@@ -14,8 +14,5 @@ return {
         { "<leader>q", "<cmd>q<cr>", desc = "退出" },
         { "<leader>w", "<cmd>w<cr>", desc = "保存" },
         { "<leader>h", "<cmd>vsp<cr>", desc = "右侧分割窗口", mode = "n" },
-
-        { "dd", "dd", desc = "删除当前行", mode = "n" },
-        { "dh", "dd", desc = "删除当前行", mode = "n" },
     },
 }

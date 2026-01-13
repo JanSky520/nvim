@@ -12,7 +12,7 @@ local create_float_term = function(cmd)                         -- 创建浮动�
 
     local width = math.floor(vim.o.columns * 0.7)               -- 设置长度，窗口总列数 * 需要的倍数
     local height = math.floor(vim.o.lines * 0.7)                -- 设置高度，窗口总行数 * 需要的倍数
-    local row = math.floor((vim.o.lines - height) / 2)          -- 设置行位置居中
+    local row = math.floor((vim.o.lines - height) / 3)          -- 设置行位置居中
     local col = math.floor((vim.o.columns - width) / 2)         -- 设置列位置居中
 
     local win = vim.api.nvim_open_win(buf, true, {              -- 打开一个窗口显示上面的 buf
@@ -27,7 +27,7 @@ local create_float_term = function(cmd)                         -- 创建浮动�
     })
 
     vim.wo[win].winhl = "Normal:Normal"                         -- 设置窗口的高亮组
-    vim.wo[win].winblend = 50                                   -- 设置窗口透明度
+    vim.wo[win].winblend = 10                                   -- 设置窗口透明度
     vim.wo[win].number = false                                  -- 不显示行号
     vim.wo[win].relativenumber = false                          -- 关闭绝对行号
     vim.wo[win].signcolumn = "no"                               -- 关闭符号列
